@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root {
+  --primary-background:  #f9fafb;
+  --green: #2ecc71;
+  --red: #e74c3c;
+  --black: #000;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection{
+    background-color: var(--green);
+    color: var(--white);
+}
+
+body {
+    background-color: var(--primary-background);
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+  
+  
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    width: 400px;
+}
+
+.card__header{
+    padding: 20px;
+}
+
+.card__header h2{
+    font-size: 20px;
+    text-align: center;
+}
+
+.card__header h2{
+    font-size: 20px;
+    text-align: center;
+}
+
+.card__content{
+    display: block;
+    padding: 40px;
+}
+
+.card__content h2{
+    text-align: center;
+    font-size: 22px;
+}
+
+.card__content .label{
+    margin: 0;
+    padding-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+    
+}
+
+.card__content input{
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.card__content #result{
+   text-align: center;   
+}
+
+#calculate, #reset{
+    display: inline-block;
+    overflow: hidden;
+    margin: 10px 6px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 20px 40px;
+    transition: 0.4s ease-in-out all;
+}
+
+#calculate {
+    background-color: var(--green);
+}
+
+#calculate:hover{
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--black);
+}
+
+#reset {
+    background-color: var(--red);
+}
+#reset:hover{
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--black);
+}
+
+#result{
+    font-size: 16px;
+    font-weight: bold;
+}
