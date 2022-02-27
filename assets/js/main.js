@@ -11,6 +11,7 @@ resetBtn.addEventListener('click', function() {
     clearResult()
 })
 
+
 function calculateAge(dob) {
     //TODO Refactor the code
     const DEFAULT_UTC_YEAR = 1970    
