@@ -38,7 +38,7 @@ function showAge(){
     }else if(age === 0){
         resultContent.innerHTML = `<span style="color:red;">Birth year should not be current year.</span>`
     }else{
-        resultContent.innerText = `Your age is ${age}`
+        resultContent.innerText = `Your age is ${age} year old`
     }
 }
 
