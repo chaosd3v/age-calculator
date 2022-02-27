@@ -13,7 +13,7 @@ resetBtn.addEventListener('click', function() {
 
 
 function calculateAge(dob) {
-    //TODO Refactor the code
+    //TODO Refactor & optimize age algorithm
     const DEFAULT_UTC_YEAR = 1970    
     let birthTime = new Date(dob).getTime()
     //calculate month difference from current date in time  
